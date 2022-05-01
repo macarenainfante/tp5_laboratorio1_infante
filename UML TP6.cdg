@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML TP6">
+  <ClassDiagramComponents>
+    <Class name="Arreglo" package="" visibility="public" xPosition="557.0" yPosition="36.0">
+      <Fields>
+        <Field name="suma" type="int" visibility="private"/>
+        <Field name="max" type="int" visibility="private"/>
+        <Field name="conteo" type="int" visibility="private"/>
+        <Field name="repeticion" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sumarLista" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="numeros"/>
+        </Method>
+        <Method name="buscarMayor" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="numerosBi"/>
+        </Method>
+        <Method name="cuentaVocales" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="palabra"/>
+        </Method>
+        <Method name="cuentaCaracter" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="palabras"/>
+          <Argument type="char" name="caracter"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Prueba arreglo" package="" visibility="public" xPosition="588.0" yPosition="361.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="usa" source="Prueba arreglo" target="Arreglo" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
